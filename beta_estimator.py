@@ -9,6 +9,7 @@ n = range(1, 1001)
 beta_0 = 10 
 beta_1 = 5
 beta_list = []
+beta_int = []
 
 for i in range(1, 1001):
     x_i = np.random.normal(0, 5, 1000)
@@ -24,7 +25,6 @@ for i in range(1, 1001):
     beta = np.linalg.multi_dot([inverse, x_array_T, y_array])
     beta_list.append(beta)
 
-beta_int = []
 for i in range(0, 1000):
     beta_int.append(beta_list[i][0][0])
 
