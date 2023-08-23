@@ -1,0 +1,1 @@
+Beta estimator: A proof
